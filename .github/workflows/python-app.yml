@@ -51,7 +51,7 @@ jobs:
       env:
         PASSWORD: ${{secrets.PASSWORD}}
       run: |
-        pytest --alluredir=../allure-report
+        pytest --alluredir=../allure-results
 
     - name: Get Allure history
       uses: actions/checkout@v2

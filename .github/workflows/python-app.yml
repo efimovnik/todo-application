@@ -30,6 +30,9 @@ jobs:
         pip install allure-pytest
         python -m pip install playwright
 
+    - name: Allure Report with history
+      uses: simple-elf/allure-report-action@v1.6
+
     - name: Ensure Playwright browsers are installed
       run: python -m playwright install chromium
     - name: Lint with flake8
@@ -45,5 +48,5 @@ jobs:
         pytest --alluredir=allure-report
 
 
-    - name: Allure report
-      uses: afiore/action-allure-report@v0.1.0
+    
+    
